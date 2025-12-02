@@ -118,6 +118,7 @@
 'use client';
 
 import { useState } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { FileText, X, AlertCircle, Check } from 'lucide-react';
 
 interface ResumeUploadProps {
