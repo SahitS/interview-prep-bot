@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function GET(request: NextRequest) {
   const issues = [];
   
@@ -18,6 +19,7 @@ export async function GET(request: NextRequest) {
   let supabaseStatus = 'Unknown';
   try {
     const { supabase } = await import('@/app/lib/supabase');
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { data, error } = await supabase.from('interviews').select('count').limit(1);
     if (error) {
       supabaseStatus = `Error: ${error.message}`;

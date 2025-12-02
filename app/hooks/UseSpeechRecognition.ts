@@ -121,6 +121,7 @@ export function useSpeechRecognition(): UseSpeechRecognitionReturn {
       if (recognitionRef.current) {
         try {
           recognitionRef.current.stop();
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         } catch (e) {
           // Ignore errors on cleanup
         }
